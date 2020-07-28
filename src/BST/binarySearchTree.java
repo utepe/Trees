@@ -87,6 +87,7 @@ public class binarySearchTree<E> {
      * remove Base Method
      * calls the overloaded remove method
      * replaces this.root with the new tree
+     * @param value
      */
     public void remove(E value){
         if(search(value) == false){
@@ -98,6 +99,10 @@ public class binarySearchTree<E> {
 
     /**
      * remove Overloaded Method
+     * used recursion to remove the specificed value from the BST
+     * @param current
+     * @param value
+     * @return
      */
     private BSTNode<E> remove(BSTNode<E> current, E value){
         if(current.compareTo(value) > 0){
@@ -120,6 +125,12 @@ public class binarySearchTree<E> {
         return current;
     }
 
+    /**
+     * getValue helper Method
+     * returns the rightMost value of the left subtree
+     * @param current
+     * @return current.value
+     */
     private E getValue(BSTNode<E> current){
         while(current.right != null)
             current = current.right;
