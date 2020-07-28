@@ -9,10 +9,10 @@ public class Main {
         System.out.print("Printing Tree InOrder: ");
         tree.InOrder();
         
-        System.out.print("\nPrinting Tree PreOrder: ");
+        System.out.print("Printing Tree PreOrder: ");
         tree.PreOrder();
 
-        System.out.print("\nPrinting Tree PostOrder: ");
+        System.out.print("Printing Tree PostOrder: ");
         tree.PostOrder();
     }
 }

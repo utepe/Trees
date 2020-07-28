@@ -58,6 +58,7 @@ public class Tree<E> {
      */
     public void InOrder(){
         traverseInOrder(this.root);
+        System.out.println();
     }
 
     /**
@@ -66,6 +67,7 @@ public class Tree<E> {
      */
     public void PreOrder(){
         traversePreOrder(this.root);
+        System.out.println();
     }
 
     /**
@@ -74,6 +76,7 @@ public class Tree<E> {
      */
     public void PostOrder(){
         traversePostOrder(this.root);
+        System.out.println();
     }
 
     /**
