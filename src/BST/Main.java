@@ -9,13 +9,13 @@ public class Main {
         }
         System.out.println("Printing BST1 in order: ");
         bst1.inOrder();
-        System.out.println("Checking if 15 exists in BST1: " + bst1.search(15));
-        System.out.println("Checking if 25 exists in BST1: " + bst1.search(25));
+        System.out.println("BST1 - Checking if 15 exists in BST1: " + bst1.search(15));
+        System.out.println("BST1 - Checking if 25 exists in BST1: " + bst1.search(25));
         
-        System.out.println("Removing 13 then Printing: ");
+        System.out.println("BST1 - Removing 13 then Printing: ");
         bst1.remove(13);
         bst1.inOrder();
-        System.out.println("Removing 8 then Printing: ");
+        System.out.println("BST1 - Removing 8 then Printing: ");
         bst1.remove(8);
         bst1.inOrder();
 
@@ -26,14 +26,14 @@ public class Main {
         }
         System.out.println("\nPrinting BST2 in order: ");
         bst2.inOrder();
-        System.out.println("Checking if 15 exists in BST1: " + bst2.search(15));
-        System.out.println("Checking if 25 exists in BST1: " + bst2.search(25));
+        System.out.println("BST2 - Checking if 15 exists in BST2: " + bst2.search(15));
+        System.out.println("BST2 - Checking if 25 exists in BST2: " + bst2.search(25));
 
-        System.out.println("Removing 13 then Printing: ");
+        System.out.println("BST2 - Removing 13 then Printing: ");
         bst2.remove(13);
         bst2.inOrder();
 
-        System.out.println("Removing 8 then Printing: ");
+        System.out.println("BST2 - Removing 8 then Printing: ");
         bst2.remove(8);
         bst2.inOrder();
 

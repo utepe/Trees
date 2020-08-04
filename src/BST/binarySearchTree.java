@@ -41,14 +41,14 @@ public class binarySearchTree<E> {
         else{
             BSTNode<E> current = this.root;
             while(true){
-                if(newNode.compareTo(current.value) < 0){
+                if(newNode.compareTo(current.value) < 0){   //if newNode is < current then go left
                     if(current.left == null){
                         current.left = newNode;
                         return;
                     }
                     current = current.left;
                 }
-                else{
+                else{                                       //if newNode is > current then go right
                     if(current.right == null) {
                         current.right = newNode;
                         return;
@@ -70,10 +70,10 @@ public class binarySearchTree<E> {
         if(this.root == null) return false;
         BSTNode<E> current = this.root;
         while(current != null){
-            if(current.compareTo(value) > 0){
+            if(current.compareTo(value) > 0){       //if newNode is < current then go left
                 current = current.left;
             }
-            else if(current.compareTo(value) < 0){
+            else if(current.compareTo(value) < 0){  //if newNode is > current then go right
                 current = current.right; 
             }
             else if(value == current.value){

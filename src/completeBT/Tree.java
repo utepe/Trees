@@ -45,6 +45,7 @@ public class Tree<E> {
             //insert left child
             node.left = insert(arr, node.left, 2*pos+1);
 
+            //insert right child
             node.right = insert(arr, node.right, 2*pos+2);
         }
         
